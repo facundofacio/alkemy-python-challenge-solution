@@ -1,0 +1,7 @@
+# ignore ALL .log files
+*.log
+
+# ignore ALL files of the following directories
+csv/
+venv/
+components/__pycache__/

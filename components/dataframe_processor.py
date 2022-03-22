@@ -206,7 +206,9 @@ def csv_to_df(category:str='salas_de_cine') -> pd.DataFrame:
     """
     try:
         # The path for searching the csv file
-        path = os.getcwd() + '\\csv\\' + category
+        path = os.path.join(os.getcwd(),
+                            'csv',
+                            category)
         
         # An empty list to retrieve csv file paths
         list_of_files = []

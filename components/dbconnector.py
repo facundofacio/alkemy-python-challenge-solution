@@ -67,7 +67,7 @@ def df_to_dbtable(df:pd.DataFrame, table:str='sitios'):
             
             # Drop 'fuente' column if table=sitios
             if table=='sitios':
-                df.drop(columns='fuente')
+                df = df.drop(columns='fuente')
             
             # pandas df to new db table
             df.to_sql(table, con=conn, if_exists='replace')

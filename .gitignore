@@ -3,5 +3,5 @@
 
 # ignore ALL files of the following directories
 csv/
-env/
+venv/
 components/__pycache__/
